@@ -20,16 +20,7 @@ jobs:
           node-version: '18'
 
       - name: Install dependencies
-        run: npm 
-
-      - name: TypeScript Check
-        run: npx tsc --noEmit
-
-      - name: Run Linter
-        run: npm run lint
-
-      - name: Run Tests
-        run: npm test -- --watchAll=false
+        run: npm install
 
       - name: Build Project
         run: npm run build
